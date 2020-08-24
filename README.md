@@ -5,8 +5,7 @@ This project has been created by Scott Barr, and improved by Maikel Mertens in r
 
 ## Configuration
 
-The `AWS_SECRET_ACCESS_KEY`, `AWS_ACCESS_KEY_ID`, and ,`AWS_REGION`
-environment variables must be set.
+The `AWS_SECRET_ACCESS_KEY`, `AWS_ACCESS_KEY_ID`, and `AWS_REGION` environment variables must be set.
 
 ## Usage
 
