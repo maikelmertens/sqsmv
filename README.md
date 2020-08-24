@@ -27,6 +27,6 @@ Create some SQS messages to play with using the AWS CLI.
 
 The MIT License (MIT)
 
-Copyright (c) 2016-2018 Scott Barr
+Copyright (c) 2016-2020 Scott Barr / Maikel Mertens
 
 See [LICENSE.md](LICENSE.md)
