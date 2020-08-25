@@ -4,7 +4,7 @@ COPY ./app /build
 RUN make build-linux
 
 
-FROM alpine
+FROM alpine:latest
 LABEL maintainer="Maikel Mertens"
 RUN apk update && \
     apk add ca-certificates && \
