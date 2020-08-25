@@ -23,6 +23,10 @@ Create some SQS messages to play with using the AWS CLI.
             --message-body "{\"id\": $i}"
     done
 
+## Updating Policy
+
+This Docker image will be automatically refreshed every week, hence you will have the latest updated version of the Docker image available anytime.
+
 ## License
 
 The MIT License (MIT)
