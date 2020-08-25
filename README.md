@@ -11,7 +11,7 @@ The `AWS_SECRET_ACCESS_KEY`, `AWS_ACCESS_KEY_ID`, and `AWS_REGION` environment v
 
 Supply source and destination URL endpoints via Docker as follows:
 
-    docker run maikelmertens/sqsmv:latest -src https://region.queue.amazonaws.com/123/queue-a -dest https://region.queue.amazonaws.com/123/queue-b
+    docker run -it --rm --env-file <(env | grep AWS_) maikelmertens/sqsmv:latest -src https://region.queue.amazonaws.com/123/queue-a -dest https://region.queue.amazonaws.com/123/queue-b
 
 ## Testing
 
