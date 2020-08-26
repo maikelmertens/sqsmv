@@ -5,13 +5,13 @@ This project has been created by Scott Barr, and improved by Maikel Mertens in r
 
 ## Configuration
 
-The `AWS_SECRET_ACCESS_KEY`, `AWS_ACCESS_KEY_ID`, and `AWS_REGION` environment variables must be set.
+The `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY` and `AWS_REGION` environment variables must be set.
 
 ## Usage
 
 Supply source and destination URL endpoints via Docker as follows:
 
-    docker run -it --rm --env-file <(env | grep AWS_) maikelmertens/sqsmv:latest -src https://region.queue.amazonaws.com/123/queue-a -dest https://region.queue.amazonaws.com/123/queue-b
+    docker run --env-file <(env | grep AWS_) maikelmertens/sqsmv:latest -src https://region.queue.amazonaws.com/123/queue-a -dest https://region.queue.amazonaws.com/123/queue-b
 
 ## Testing
 
@@ -19,7 +19,7 @@ Create some SQS messages to play with using the AWS CLI.
 
     for i in {0..24..1}; do
         aws sqs send-message \
-            --queue-url https://ap-southeast-2.queue.amazonaws.com/123/wat-a
+            --queue-url https://region.queue.amazonaws.com/123/queue-a
             --message-body "{\"id\": $i}"
     done
 
